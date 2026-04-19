@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=newmain.c
+SOURCEFILES_QUOTED_IF_SPACED=UART_0.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newmain.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/newmain.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/UART_0.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/UART_0.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/newmain.o
+OBJECTFILES=${OBJECTDIR}/UART_0.o
 
 # Source Files
-SOURCEFILES=newmain.c
+SOURCEFILES=UART_0.c
 
 # Pack Options 
 PACK_COMPILER_OPTIONS=-I "${DFP_DIR}/include"
@@ -104,18 +104,18 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/newmain.o: newmain.c  .generated_files/flags/default/76614d76e4483d31d5de7aed8f1dbb857622995a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/UART_0.o: UART_0.c  .generated_files/flags/default/33509e56325fcf996b027ebf14e28e2308b804f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/newmain.o.d 
-	@${RM} ${OBJECTDIR}/newmain.o 
-	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/newmain.o.d" -MT "${OBJECTDIR}/newmain.o.d" -MT ${OBJECTDIR}/newmain.o  -o ${OBJECTDIR}/newmain.o newmain.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/UART_0.o.d 
+	@${RM} ${OBJECTDIR}/UART_0.o 
+	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/UART_0.o.d" -MT "${OBJECTDIR}/UART_0.o.d" -MT ${OBJECTDIR}/UART_0.o  -o ${OBJECTDIR}/UART_0.o UART_0.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
 else
-${OBJECTDIR}/newmain.o: newmain.c  .generated_files/flags/default/e886de39e01115f8923d35c88934c7a7d2096c01 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/UART_0.o: UART_0.c  .generated_files/flags/default/7197ac7175a52efc66618531d37e910e7d06b4b4 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/newmain.o.d 
-	@${RM} ${OBJECTDIR}/newmain.o 
-	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/newmain.o.d" -MT "${OBJECTDIR}/newmain.o.d" -MT ${OBJECTDIR}/newmain.o  -o ${OBJECTDIR}/newmain.o newmain.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/UART_0.o.d 
+	@${RM} ${OBJECTDIR}/UART_0.o 
+	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/UART_0.o.d" -MT "${OBJECTDIR}/UART_0.o.d" -MT ${OBJECTDIR}/UART_0.o  -o ${OBJECTDIR}/UART_0.o UART_0.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
 endif
 

@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=newfile.c ../LCD-1.X/my_lcd.c
+SOURCEFILES_QUOTED_IF_SPACED=../LCD-1.X/my_lcd.c LCD-3.1.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/newfile.o ${OBJECTDIR}/_ext/967361428/my_lcd.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/newfile.o.d ${OBJECTDIR}/_ext/967361428/my_lcd.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/967361428/my_lcd.o ${OBJECTDIR}/LCD-3.1.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/967361428/my_lcd.o.d ${OBJECTDIR}/LCD-3.1.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/newfile.o ${OBJECTDIR}/_ext/967361428/my_lcd.o
+OBJECTFILES=${OBJECTDIR}/_ext/967361428/my_lcd.o ${OBJECTDIR}/LCD-3.1.o
 
 # Source Files
-SOURCEFILES=newfile.c ../LCD-1.X/my_lcd.c
+SOURCEFILES=../LCD-1.X/my_lcd.c LCD-3.1.c
 
 # Pack Options 
 PACK_COMPILER_OPTIONS=-I "${DFP_DIR}/include"
@@ -104,30 +104,30 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/newfile.o: newfile.c  .generated_files/flags/default/64883aee36a6ebca6124734d12358e8506b1ce6d .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/newfile.o.d 
-	@${RM} ${OBJECTDIR}/newfile.o 
-	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/newfile.o.d" -MT "${OBJECTDIR}/newfile.o.d" -MT ${OBJECTDIR}/newfile.o  -o ${OBJECTDIR}/newfile.o newfile.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
 ${OBJECTDIR}/_ext/967361428/my_lcd.o: ../LCD-1.X/my_lcd.c  .generated_files/flags/default/9c7c8fa21e809c98aca3c17cc8a41f447bbae518 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/967361428" 
 	@${RM} ${OBJECTDIR}/_ext/967361428/my_lcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/967361428/my_lcd.o 
 	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/_ext/967361428/my_lcd.o.d" -MT "${OBJECTDIR}/_ext/967361428/my_lcd.o.d" -MT ${OBJECTDIR}/_ext/967361428/my_lcd.o  -o ${OBJECTDIR}/_ext/967361428/my_lcd.o ../LCD-1.X/my_lcd.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-else
-${OBJECTDIR}/newfile.o: newfile.c  .generated_files/flags/default/429a36e71409f58086627b2cce3eeac561b63c83 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/LCD-3.1.o: LCD-3.1.c  .generated_files/flags/default/8e565ae9c516a20d3097ba709d268d077cc24b69 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/newfile.o.d 
-	@${RM} ${OBJECTDIR}/newfile.o 
-	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/newfile.o.d" -MT "${OBJECTDIR}/newfile.o.d" -MT ${OBJECTDIR}/newfile.o  -o ${OBJECTDIR}/newfile.o newfile.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
+	@${RM} ${OBJECTDIR}/LCD-3.1.o.d 
+	@${RM} ${OBJECTDIR}/LCD-3.1.o 
+	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/LCD-3.1.o.d" -MT "${OBJECTDIR}/LCD-3.1.o.d" -MT ${OBJECTDIR}/LCD-3.1.o  -o ${OBJECTDIR}/LCD-3.1.o LCD-3.1.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
+else
 ${OBJECTDIR}/_ext/967361428/my_lcd.o: ../LCD-1.X/my_lcd.c  .generated_files/flags/default/8124cb283d2bb250abba7427e7b455a789179e9f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}/_ext/967361428" 
 	@${RM} ${OBJECTDIR}/_ext/967361428/my_lcd.o.d 
 	@${RM} ${OBJECTDIR}/_ext/967361428/my_lcd.o 
 	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/_ext/967361428/my_lcd.o.d" -MT "${OBJECTDIR}/_ext/967361428/my_lcd.o.d" -MT ${OBJECTDIR}/_ext/967361428/my_lcd.o  -o ${OBJECTDIR}/_ext/967361428/my_lcd.o ../LCD-1.X/my_lcd.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/LCD-3.1.o: LCD-3.1.c  .generated_files/flags/default/7e376ae258c93166340745163281249ecec63941 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/LCD-3.1.o.d 
+	@${RM} ${OBJECTDIR}/LCD-3.1.o 
+	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=atmega32a ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/LCD-3.1.o.d" -MT "${OBJECTDIR}/LCD-3.1.o.d" -MT ${OBJECTDIR}/LCD-3.1.o  -o ${OBJECTDIR}/LCD-3.1.o LCD-3.1.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
 endif
 

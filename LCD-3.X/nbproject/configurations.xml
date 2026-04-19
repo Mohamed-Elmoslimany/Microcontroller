@@ -18,8 +18,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>newmain.c</itemPath>
       <itemPath>../LCD-1.X/my_lcd.c</itemPath>
+      <itemPath>LCD-3.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
