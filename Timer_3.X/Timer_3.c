@@ -15,10 +15,10 @@ void blink_led(uint8_t pin, uint8_t times) {
 int main(void) {
     uint8_t was_watchdog_reset;
     // Check reset source BEFORE clearing the flag
-    was_watchdog_reset = MCUSR & (1 << WDRF);
+    was_watchdog_reset = MCUCSR & (1 << WDRF);
 
     // Clear watchdog reset flag and disable watchdog
-    MCUSR &= ~(1 << WDRF);
+    MCUCSR &= ~(1 << WDRF);
     wdt_disable();
 
     // Configure PB0 and PB1 as outputs (for LEDs)
